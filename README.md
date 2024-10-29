@@ -2,7 +2,7 @@ Here's the updated `README.md` content with your `handlePageChange` event custom
 
 ---
 
-# @abhicodecraft/vue-paginate
+# vue-paginate
 
 A customizable and responsive pagination component for Vue 3, designed to provide a seamless pagination experience. Easily integrate it into your Vue projects to manage large data sets with a clean and interactive pagination interface.
 

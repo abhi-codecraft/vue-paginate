@@ -153,5 +153,3 @@ To set up the project locally for development:
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
 
 --- 
-
-This content is ready for your GitHub repository, making it easy for users to install, set up, and use your pagination component.

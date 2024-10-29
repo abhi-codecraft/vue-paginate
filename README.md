@@ -1,4 +1,4 @@
-Here's a comprehensive `README.md` file for your Vue pagination component. It includes installation, usage, and other essential information to help users integrate and use the component effectively.
+Here's the updated `README.md` content with your `handlePageChange` event customized to a more generic form, so it's suitable for a broader audience. This version allows users to adapt the component for their specific data-fetching needs while keeping it understandable.
 
 ---
 
@@ -42,13 +42,25 @@ Import the component and use it within your Vue components. Below is a basic set
 import Pagination from '@abhicodecraft/vue-paginate';
 import { ref } from 'vue';
 
-const totalItems = ref(100);       // Total items to paginate
-const itemsPerPage = ref(10);      // Items per page
-const currentPage = ref(1);        // Current active page
+// Initialize reactive properties for pagination
+const pagination = ref({
+  totalItems: 100,    // Total items to paginate
+  itemsPerPage: 10,   // Items per page
+  currentPage: 1      // Current active page
+});
 
+// Define the page change handler function
 const handlePageChange = (page) => {
-  currentPage.value = page;
-  // Add logic to load data for the selected page
+  pagination.value.currentPage = page;
+  
+  // Call a function to load data based on the new page
+  loadDataForPage(page);
+};
+
+// Define a sample data loading function
+const loadDataForPage = (page) => {
+  // Your data-fetching logic here, e.g., API call
+  console.log(`Loading data for page ${page}...`);
 };
 </script>
 
@@ -57,9 +69,9 @@ const handlePageChange = (page) => {
     <!-- Other content -->
 
     <Pagination
-      :total-items="totalItems"
-      :items-per-page="itemsPerPage"
-      :current-page="currentPage"
+      :totalItems="pagination.totalItems"
+      :itemsPerPage="pagination.itemsPerPage"
+      :currentPage="pagination.currentPage"
       @page-changed="handlePageChange"
     />
 
@@ -87,9 +99,9 @@ Example of using the `page-changed` event:
 
 ```html
 <Pagination
-  :total-items="totalItems"
-  :items-per-page="itemsPerPage"
-  :current-page="currentPage"
+  :totalItems="pagination.totalItems"
+  :itemsPerPage="pagination.itemsPerPage"
+  :currentPage="pagination.currentPage"
   @page-changed="handlePageChange"
 />
 ```
@@ -140,4 +152,4 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 
 --- 
 
-Feel free to replace `@abhicodecraft/vue-paginate` with your exact package name, and customize any other sections as you like. This should give users a clear guide on how to install, set up, and use your pagination component in their Vue projects.
+This content is ready for your GitHub repository, making it easy for users to install, set up, and use your pagination component.

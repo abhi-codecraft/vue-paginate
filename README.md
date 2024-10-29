@@ -1,5 +1,3 @@
-Here's the updated `README.md` content with your `handlePageChange` event customized to a more generic form, so it's suitable for a broader audience. This version allows users to adapt the component for their specific data-fetching needs while keeping it understandable.
-
 ---
 
 # vue-paginate

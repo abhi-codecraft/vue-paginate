@@ -4,6 +4,10 @@
     "description": "A simple Vue 3 pagination component",
     "main": "index.js",
     "module": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/abhi-codecraft/vue-paginate.git"
+    },
     "files": [
         "src",
         "index.js"

@@ -1,0 +1,34 @@
+{
+    "name": "@abhicodecraft/vue-paginate",
+    "version": "1.0.0",
+    "description": "A simple Vue 3 pagination component",
+    "main": "index.js",
+    "module": "index.js",
+    "files": [
+        "src",
+        "index.js"
+    ],
+    "scripts": {
+        "build": "vite build"
+    },
+    "dependencies": {
+        "vue": "^3.0.0"
+    },
+    "peerDependencies": {
+        "vue": "^3.0.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "keywords": [
+        "vue",
+        "pagination",
+        "component"
+    ],
+    "author": "Abhi Jith",
+    "license": "MIT",
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^5.1.4",
+        "vite": "^5.4.10"
+    }
+}

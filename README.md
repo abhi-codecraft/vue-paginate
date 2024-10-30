@@ -39,7 +39,7 @@ Import the component and use it within your Vue components. Below is a basic set
 
 ```vue
 <script setup>
-import Pagination from '@abhicodecraft/vue-paginate';
+import PaginationComponent from '@abhicodecraft/vue-paginate';
 import { ref } from 'vue';
 
 // Initialize reactive properties for pagination
@@ -68,7 +68,7 @@ const loadDataForPage = (page) => {
   <div>
     <!-- Other content -->
 
-    <Pagination
+    <PaginationComponent
       :totalItems="pagination.totalItems"
       :itemsPerPage="pagination.itemsPerPage"
       :currentPage="pagination.currentPage"
@@ -98,7 +98,7 @@ const loadDataForPage = (page) => {
 Example of using the `page-changed` event:
 
 ```html
-<Pagination
+<PaginationComponent
   :totalItems="pagination.totalItems"
   :itemsPerPage="pagination.itemsPerPage"
   :currentPage="pagination.currentPage"
